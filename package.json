@@ -1,0 +1,22 @@
+{
+  "name": "next-strapi-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm run install:next && npm run install:strapi",
+    "install:next": "npm install --prefix nextjs",
+    "install:strapi": "npm install --prefix strapi",
+    "dev:next": "npm run dev --prefix nextjs",
+    "dev:strapi": "npm run develop --prefix strapi",
+    "dev": "concurrently \"npm run dev:next\" \"npm run dev:strapi\"",
+    "start:next": "npm run start --prefix nextjs",
+    "start:strapi": "npm run start --prefix strapi",
+    "start": "npm run dev",
+    "build:next": "npm run build --prefix nextjs",
+    "build:strapi": "npm run build --prefix strapi",
+    "build": "npm run build:next && npm run build:strapi"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

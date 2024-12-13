@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_fotos",
+  "info": {
+    "displayName": "fotos",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "fotos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
