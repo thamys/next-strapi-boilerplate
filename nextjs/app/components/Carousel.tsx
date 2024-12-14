@@ -42,7 +42,7 @@ const HomeCarousel: React.FC = () => {
         {content.map((item, index) => (
           <div
             key={index}
-            className="h-72 !flex flex-col !justify-center !items-center w-full pt-10 pb-12"
+            className="h-[500px] !flex flex-col !justify-center !items-center w-full pt-10 pb-12"
           >
             <div className="w-full max-w-lg">
               <Typography.Title className="!text-white" level={1}>
